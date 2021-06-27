@@ -1,0 +1,28 @@
+Base: Optional
+
+1. Using [Google Jamboard](https://jamboard.google.com/), draw a **singly linked list** with three integer elements, `4`, `3`, and `9`. Be sure to indicate the head and tail. 
+
+
+Link your drawing below:
+
+
+
+2. Watch this video:https://www.youtube.com/watch?v=Bd1L64clh34, to review how to implement the following methods:
+* append()
+* remove()
+* find()
+
+Write what you learned below
+
+Mastery: Required
+
+1. Compare and contrast a linked list and a dynamic array for the prepend() method, what is the worst case time complexity for each?
+
+
+Stretch: Optional
+
+1. Implement a circular linked list and its methods and paste your solution here (bonus: also include worst-case time complexity analysis)
+
+Here is one way to implement a circular linked list:(https://stonesoupprogramming.com/2017/05/21/circular-linked-list-python/) if you get stuck
+
+Paste a link to your implementation below
