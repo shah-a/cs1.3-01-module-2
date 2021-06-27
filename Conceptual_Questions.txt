@@ -18,6 +18,13 @@ Mastery: Required
 
 1. Compare and contrast a linked list and a dynamic array for the prepend() method, what is the worst case time complexity for each?
 
+Worst case time complexities:
+Linked list   --> O(1) (constant)
+Dynamic array --> O(n) (linear)
+
+The reason a linked list has constant time for prepending is because all it takes is changing the head pointer, as well as the new item's `next` attribute. No other elements need to be changed, and the list does not need to be changed/manipulated/copied in any other way.
+
+The reason a dynamic array has linear time for prepending is because all its elements need to be copied to a new array, along with the prepended object being the new 0th index item.
 
 Stretch: Optional
 
