@@ -5,7 +5,7 @@ Base: Optional
 
 Link your drawing below:
 
-
+- Added to repository as `linkedlist.png`
 
 2. Watch this video:https://www.youtube.com/watch?v=Bd1L64clh34, to review how to implement the following methods:
 * append()
