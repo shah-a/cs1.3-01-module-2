@@ -1,4 +1,5 @@
 from LinkedList import LinkedList
+from DoublyLinkedList import DoublyLinkedList
 
 def test_prepend():
   my_ll = LinkedList()
@@ -55,6 +56,40 @@ def test_delete_v2():
   assert my_ll.head.data == 20
   assert my_ll.tail.data == 20
 
+def test_doubly_linked_list():
+  my_ll = DoublyLinkedList()
+
+  my_ll.add(31)
+  my_ll.remove(31)
+  assert my_ll.size() == 0
+
+  my_ll.add(31)
+  my_ll.add(77)
+  my_ll.add(17)
+  my_ll.add(93)
+  my_ll.add(26)
+  my_ll.add(54)
+  assert my_ll.head.get_next().get_next().get_data() == 93
+  assert my_ll.head.get_next().get_next().get_next().get_data() == 17
+  assert my_ll.head.get_next().get_next().get_previous().get_data() == 26
+  assert my_ll.size() == 6
+  assert my_ll.search(93) == True
+  assert my_ll.search(100) == False
+
+  my_ll.add(100)
+  assert my_ll.search(100) == True
+  assert my_ll.size() == 7
+
+  my_ll.remove(54)
+  assert my_ll.size() == 6
+
+  my_ll.remove(31)
+  assert my_ll.size() == 5
+
+  my_ll.remove(93)
+  assert my_ll.size() == 4
+  assert my_ll.search(93) == False
+
 if __name__ == '__main__':
   test_prepend()
   print("`prepend()` tests passed")
@@ -67,3 +102,6 @@ if __name__ == '__main__':
 
   test_delete_v2()
   print("`delete()` tests (v2) passed")
+
+  test_doubly_linked_list()
+  print("DoublyLinkedList tests passed")
